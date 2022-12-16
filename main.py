@@ -8,7 +8,6 @@ den = datetime.today().strftime("%d" + "." + "%m" + "." + "%Y")
 
 API_KEY = '5867077652:AAEOazAHPbt0p4nFFFjfyyMwIOnQpTz2hPo'
 yandex = 'https://poezdato.net/raspisanie-poezdov/novodachnaya--okruzhnaya/' + den + '/'
-print(yandex)
 er2r = f'ЭР2Р — один из последних массовых электропоездов СССР. Производился в ' +\
        f'Риге, сделано 1024 вагона (это 20 км сплошной электрички!)\nГлавной ' +\
        f'новинкой ЭР2Р стало рекуперативно-реостатное торможение, работающее ' +\
@@ -26,10 +25,8 @@ def parser(link):
     times = soup.find_all('span', class_='_time')
     all_times = [c.text for c in times]
     int_times = []
-    print(all_times)
     now = datetime.now()
     current_time = now.strftime("%H:%M")
-    print(current_time)
     for j in range(len(all_times)):
         str1 = all_times[j]
         a = int(str1[0]) * 1000 + int(str1[1]) * 100 + int(str1[3]) * 10 + int(str1[4])
