@@ -12,7 +12,8 @@ ____
 1. Начните работу с кодом:
 ```
 git clone https://github.com/vasyuta/my_firtst_tg_bot/tree/main.git
-cd my_firtst_tg_bot
+cd my_firtst_tg_bot
+pip install -r requiremts.txt
 git checkout dev
 python3 main.py
 ```
