@@ -9,7 +9,13 @@ ____
 - **работе с внешними сайтами и отображении информации с них пользователю**: расписание берётся не из сохранённых на компьютере данных, а с сайта [поездато](http://poezdato.net), т.е. оно автоматически обновляется, учитывая малейшие изменения в графике.
 ____
 **Запуск бота**
-1. Скопируйте репозиторий (`git clone https://github.com/vasyuta/my_firtst_tg_bot.git`)
+1. Начните работу с кодом:
+```
+git clone https://github.com/vasyuta/my_firtst_tg_bot/tree/main.git
+cd my_firtst_tg_bot
+git checkout dev
+python3 main.py
+```
 2. Установите необходимые библиотеки:
 ```
 import requests
